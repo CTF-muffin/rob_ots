@@ -1,0 +1,6 @@
+FROM python:3.8-slim
+COPY . /app
+WORKDIR /app
+RUN pip install flask
+ENV CTF_FLAG=KRDU{R0b0t5_53cr3T_Fl4G}
+CMD ["python", "app.py"]
